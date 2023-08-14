@@ -1,5 +1,8 @@
 FROM hexpm/elixir:1.14.5-erlang-25.3.2.4-alpine-3.18.2 AS builder
 
+ENV USER=cadtail
+ENV REPO=blockscout
+LABEL org.opencontainers.image.source=https://github.com/$USER/$REPO
 WORKDIR /app
 
 RUN apk --no-cache --update add alpine-sdk gmp-dev automake libtool inotify-tools autoconf python3 file gcompat
