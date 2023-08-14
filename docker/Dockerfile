@@ -68,8 +68,8 @@ RUN mkdir -p /opt/release \
 ##############################################################
 FROM hexpm/elixir:1.14.5-erlang-25.3.2.4-alpine-3.18.2
 
-ENV RELEASE_VERSION=5.1.5
-ENV BLOCKSCOUT_VERSION=5.1.5
+ENV RELEASE_VERSION=5.2.1
+ENV BLOCKSCOUT_VERSION=5.2.1
 
 RUN apk --no-cache --update add jq
 
